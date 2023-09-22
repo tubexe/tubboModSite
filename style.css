@@ -1,8 +1,62 @@
-﻿.flex-container {
+﻿html {
+    background-color: #202020;
+    font-family: Verdana;
+}
+
+:root {
+    --primary-color: #D6D6D6;
+}
+
+.flex-container {
     display: flex;
     justify-content: center;
+    flex: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .buttons-main {
-
+    background-color: #333533;
+    border-radius: 10px;
+    margin: 10px 25px 10px 25px;
+    color: #D6D6D6;
+    width: 380px;
+    height: auto;
+    justify-content: center;
+    transition: 0.2s;
+    padding-bottom: 20px;
 }
+
+    .buttons-main:hover {
+        background-color: #643FA7;
+    }
+
+.title {
+    color: #D6D6D6;
+    padding: 10px 0px 10px 0px;
+}
+
+.icon {
+    height: 60px;
+    width: auto;
+    padding-top: 20px;
+}
+ 
+
+
+/* for mobile viewing */
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .buttons-main {
+        width: 300px;
+    }
+ }
+
+
+
